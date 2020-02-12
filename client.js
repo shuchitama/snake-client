@@ -15,6 +15,7 @@ const connect = function () {
   conn.on('connect', () => { // connect handler ( is a cb function) is triggered as soon as connection is established
     console.log('Successfully connected to game server');
     conn.write('Name: SJM');
+    conn.write('Move: up');
   });
 
   return conn;
