@@ -27,6 +27,7 @@ const handleUserInput = (data) => {    // must hardcode exit by ^C because stdin
   if (data === 'd') {
     connection.write('Move: right');
   }
+  connection.write('Say: ole');
 }
 
 module.exports = { setupInput };
